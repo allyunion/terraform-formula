@@ -9,9 +9,8 @@ Setup variable using grains['os_family'] based logic
 os_family specific settings are stored in defaults.yml
 ##}
 {% 
-
-		set terraform_sha256_checksums = (
-			{
+  set terraform_sha256_checksums = ( 
+      {
         '0.15.0-alpha20210127': 'sha256=1bb2dfa88fa066df7c9d3c58b96a9db6ecd3302db6bf63d693a4f39268e1e156',
         '0.15.0-alpha20210107': 'sha256=4dacde757b7fe81fdda36779cce5cd9d5123d4fbbec546551f9d2dac71dde39c',
         '0.14.5': 'sha256=2899f47860b7752e31872e4d57b1c03c99de154f12f0fc84965e231bc50f312f',
