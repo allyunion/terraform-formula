@@ -1,6 +1,6 @@
-{% from "packer/map.jinja" import packer with context -%}
-# Ensure that packer is added to the environment
-packer-env-file:
+{% from "terraform/map.jinja" import terraform with context -%}
+# Ensure that terraform is added to the environment
+terraform-env-file:
   file.managed:
-    - name: {{ packer.path.profile }}
-    - contents: "export PATH=$PATH:{{ packer.path.extract_to|replace('VERSION', packer.download.version) }}"
+    - name: {{ terraform.path.profile }}
+    - contents: "export PATH=$PATH:{{ terraform.path.extract_to|replace('VERSION', terraform.download.version) }}"

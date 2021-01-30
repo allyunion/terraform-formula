@@ -2,5 +2,5 @@
 # vim: ft=sls
 
 include:
-  - packer.install
-  - packer.config
+  - terraform.install
+  - terraform.config

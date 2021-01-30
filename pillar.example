@@ -1,5 +1,5 @@
-packer:
+terraform:
   lookup:
     download:
-      version: '0.11.0'
-      hash: "sha256=318ffffa13763eb6f29f28f572656356dc3dbf8d54c01ffddd1c5e2f08593adb"
+      version: '0.11.15-oci'
+      hash: "sha256=6f4edcb271ef332e7757193da6f84cb5fb48e1d8e6208cda69d556b4a903c30a"

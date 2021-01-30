@@ -2,17 +2,17 @@
 # vim: ft=jinja
 
 {## Start with  defaults from defaults.yml ##}
-{% import_yaml 'packer/defaults.yml' as default_settings %}
+{% import_yaml 'terraform/defaults.yml' as default_settings %}
 
 {##
 Setup variable using grains['os_family'] based logic
 os_family specific settings are stored in defaults.yml
 ##}
 {% 
-    set packer = salt['grains.filter_by'](
+    set terraform = salt['grains.filter_by'](
         default_settings,
         base='default',
         grain="os_family",
-        merge=salt['pillar.get']('packer:lookup')
+        merge=salt['pillar.get']('terraform:lookup')
     ) 
 %}

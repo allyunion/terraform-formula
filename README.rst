@@ -1,8 +1,8 @@
-======
-Packer
-======
+=========
+Terraform
+=========
 
-Formulas for working with packer
+Formulas for working with terraform
 
 .. note::
 
@@ -15,7 +15,7 @@ Available states
 .. contents::
     :local:
 
-``packer``
+``terraform``
 ----------
 
-Install packer and add it to PATH
+Install terraform and add it to PATH
