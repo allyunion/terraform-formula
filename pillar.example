@@ -2,4 +2,3 @@ terraform:
   lookup:
     download:
       version: '0.11.15-oci'
-      hash: "sha256=6f4edcb271ef332e7757193da6f84cb5fb48e1d8e6208cda69d556b4a903c30a"
